@@ -2,7 +2,6 @@ blockchain==1.4.4
 boto3==1.9.52
 botocore==1.12.52
 certifi==2018.10.15
--e git+https://github.com/DeepanS206/openbtc.git@a265eea8a944c403efd34221f6c4aaea20decf25#egg=cryptograph
 cycler==0.10.0
 docutils==0.14
 enum-compat==0.0.2
