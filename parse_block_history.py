@@ -172,5 +172,5 @@ def load_single_block(block_hash):
 
 if __name__ == "__main__":
     block_hash = sys.argv[1]
-    # load_single_block(block_hash)
-    load_blocks(20, block_hash)
+    load_single_block(block_hash)
+    # load_blocks(20, block_hash)
