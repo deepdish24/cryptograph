@@ -2,14 +2,22 @@ blockchain==1.4.4
 boto3==1.9.52
 botocore==1.12.52
 certifi==2018.10.15
+-e git+https://github.com/DeepanS206/openbtc.git@a265eea8a944c403efd34221f6c4aaea20decf25#egg=cryptograph
+cycler==0.10.0
 docutils==0.14
 enum-compat==0.0.2
 future==0.17.1
 jmespath==0.9.3
+kiwisolver==1.0.1
+matplotlib==3.0.2
+numpy==1.15.4
 onctuous==0.5.84
 pynamodb==3.3.1
+pyparsing==2.3.0
+python-algorithms==0.2.2
 python-dateutil==2.7.5
 s3transfer==0.1.13
 six==1.11.0
+unionfind==0.0.10
 urllib3==1.24.1
 websockets==7.0
