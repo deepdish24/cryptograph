@@ -181,7 +181,8 @@ async def client_main():
         while True:
             messages = await websocket.recv()
             block_info = json.loads(messages)
-            block_hash = block_info['x']['hash']
-            load_single_block(block_hash)
+            if block_info['op'] == 'block':
+                block_hash = block_info['x']['hash']
+                load_single_block(block_hash)
 
 asyncio.get_event_loop().run_until_complete(client_main())
