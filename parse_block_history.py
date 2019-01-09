@@ -166,8 +166,9 @@ def load_blocks(num_blocks, block_hash):
 
 
 def load_single_block(block_hash):
+    print("loading single block...")
     block = blockexplorer.get_block(block_hash)
-    db_put(block)
+    wait_and_load(block, 0, 3)
 
 
 if __name__ == "__main__":
