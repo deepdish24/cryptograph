@@ -1,4 +1,5 @@
 import json
+import time
 import asyncio
 import websockets
 from blockchain import blockexplorer
@@ -94,10 +95,12 @@ def db_put(block):
                 BtcTransactions.get(tx.tx_index)
             except DoesNotExist:
                 # list of inputs for transaction (can contain duplicates)
-                valid_inputs = [x for x in tx.inputs if x.address is not None]
+                valid_inputs = [x for x in tx.inputs if 'address' in x.__dict__.keys()
+                                and x.address is not None]
 
                 # list of outputs for transaction (cannot contain duplicates)
-                valid_outputs = [x for x in tx.outputs if x.address is not None]
+                valid_outputs = [x for x in tx.outputs if 'address' in x.__dict__.keys() and
+                                 x.address is not None]
 
                 addresses_input = set(x.address for x in valid_inputs)
                 addresses_output = set(x.address for x in valid_outputs)
@@ -138,14 +141,26 @@ def db_put(block):
                 batch.save(tx_object)
 
 
+def wait_and_load(block, interval_wait, num_times):
+    if num_times < 5:
+        try:
+            db_put(block)
+            return
+        except Exception as e:
+            print("error in parsing block: %s" % str(e))
+            print("proceeding to wait...")
+            time.sleep(interval_wait)
+            print("sleep finished...resuming")
+            wait_and_load(block, interval_wait + 60, num_times + 1)
+    else:
+        print("block failed...moving onto next block")
+        return
+
+
 def load_single_block(block_hash):
     print("parsing block %s" % block_hash)
     block = blockexplorer.get_block(block_hash)
-    try:
-        db_put(block)
-    except Exception as e:
-        print("error in parsing block %s" % block_hash)
-        print(str(e))
+    wait_and_load(block, 30, 3)
 
 
 async def client_main():
@@ -166,7 +181,7 @@ async def client_main():
         while True:
             messages = await websocket.recv()
             block_info = json.loads(messages)
-            print(block_info[''])
-            print(messages)
+            block_hash = block_info['x']['hash']
+            load_single_block(block_hash)
 
 asyncio.get_event_loop().run_until_complete(client_main())

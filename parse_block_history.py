@@ -89,15 +89,17 @@ def db_put_address_outputs(addresses, tx_index):
 def db_put(block):
     # iterate through transactions and write to database
     with BtcTransactions.batch_write() as batch:
-        for tx in block.transactions[1:]:
+        for tx in block.transactions[1:2]:
             try:
                 BtcTransactions.get(tx.tx_index)
             except DoesNotExist:
                 # list of inputs for transaction (can contain duplicates)
-                valid_inputs = [x for x in tx.inputs if x.address is not None]
+                valid_inputs = [x for x in tx.inputs if 'address' in x.__dict__.keys()
+                                and x.address is not None]
 
                 # list of outputs for transaction (cannot contain duplicates)
-                valid_outputs = [x for x in tx.outputs if x.address is not None]
+                valid_outputs = [x for x in tx.outputs if 'address' in x.__dict__.keys() and
+                                 x.address is not None]
 
                 addresses_input = set(x.address for x in valid_inputs)
                 addresses_output = set(x.address for x in valid_outputs)
