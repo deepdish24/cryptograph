@@ -15,4 +15,4 @@ def address_check():
 
 
 if __name__ == "__main__":
-    get_num_addresses()
+    print("num addresses: " + str(get_num_addresses()))

@@ -160,7 +160,7 @@ def wait_and_load(block, interval_wait, num_times):
 def load_single_block(block_hash):
     print("parsing block %s" % block_hash)
     block = blockexplorer.get_block(block_hash)
-    wait_and_load(block, 30, 3)
+    wait_and_load(block, 30, 2)
 
 
 async def client_main():
