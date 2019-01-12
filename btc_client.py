@@ -184,8 +184,12 @@ async def client_main():
     :return: void
     """
 
+    print("addresses parsed...starting worker thread")
+
     t = Thread(target=worker_thread)
     t.start()
+
+    print("worker thread started...waiting for block hash")
 
     # print("testing add to queue")
     # task_queue.put("test block hash")
