@@ -2,12 +2,17 @@ import json
 import time
 import asyncio
 import websockets
+from queue import Queue
+from threading import Thread
 from blockchain import blockexplorer
 from pynamodb.exceptions import DoesNotExist
 from query.query_helper import get_num_addresses
 from models.refined_models import BtcAddresses, BtcTransactions
 
-CURR_ADDR_ID = get_num_addresses()
+
+# CURR_ADDR_ID = get_num_addresses()
+CURR_ADDR_ID = 0
+task_queue = Queue()
 
 
 def db_put_address_inputs(addresses, tx_index):
@@ -163,6 +168,14 @@ def load_single_block(block_hash):
     wait_and_load(block, 30, 2)
 
 
+def worker_thread():
+    while True:
+        block_hash = task_queue.get()
+        print("enqueued hash %s" % block_hash)
+        load_single_block(block_hash)
+        task_queue.task_done()
+
+
 async def client_main():
     """
     function that subscribes to block creation events and adds
@@ -170,10 +183,20 @@ async def client_main():
     database
     :return: void
     """
+
+    t = Thread(target=worker_thread)
+    t.start()
+
+    # print("testing add to queue")
+    # task_queue.put("test block hash")
+
     async with websockets.connect(
             'wss://ws.blockchain.info/inv') as websocket:
         ping_msg = json.dumps({'op':'ping'})
         sub_blocks_msg = json.dumps({'op':'blocks_sub'})
+
+        # print("proceeding to wait subscription from blockchain")
+        # task_queue.put("test2")
 
         await websocket.send(ping_msg)
         await websocket.send(sub_blocks_msg)
@@ -183,6 +206,7 @@ async def client_main():
             block_info = json.loads(messages)
             if block_info['op'] == 'block':
                 block_hash = block_info['x']['hash']
-                load_single_block(block_hash)
+                print("adding hash to queue hash: %s" % block_hash)
+                task_queue.put(block_hash)
 
 asyncio.get_event_loop().run_until_complete(client_main())
