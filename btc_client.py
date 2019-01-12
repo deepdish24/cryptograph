@@ -10,8 +10,8 @@ from query.query_helper import get_num_addresses
 from models.refined_models import BtcAddresses, BtcTransactions
 
 
-# CURR_ADDR_ID = get_num_addresses()
-CURR_ADDR_ID = 0
+CURR_ADDR_ID = get_num_addresses()
+# CURR_ADDR_ID = 0
 task_queue = Queue()
 
 
