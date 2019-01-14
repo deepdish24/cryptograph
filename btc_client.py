@@ -14,6 +14,8 @@ CURR_ADDR_ID = get_num_addresses()
 # CURR_ADDR_ID = 0
 task_queue = Queue()
 
+print("starting script...")
+
 
 def db_put_address_inputs(addresses, tx_index):
     """
