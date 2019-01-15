@@ -10,11 +10,16 @@ from query.query_helper import get_num_addresses
 from models.refined_models import BtcAddresses, BtcTransactions
 
 
+def write_to_file(string):
+    with open("debug/out.txt", "a") as f:
+        f.write(string + "\n")
+
+
 CURR_ADDR_ID = get_num_addresses()
 # CURR_ADDR_ID = 0
 task_queue = Queue()
 
-print("starting script...")
+write_to_file("starting script...")
 
 
 def db_put_address_inputs(addresses, tx_index):
@@ -154,18 +159,18 @@ def wait_and_load(block, interval_wait, num_times):
             db_put(block)
             return
         except Exception as e:
-            print("error in parsing block: %s" % str(e))
-            print("proceeding to wait...")
+            write_to_file("error in parsing block: %s" % str(e))
+            write_to_file("proceeding to wait...")
             time.sleep(interval_wait)
-            print("sleep finished...resuming")
+            write_to_file("sleep finished...resuming")
             wait_and_load(block, interval_wait + 60, num_times + 1)
     else:
-        print("block failed...moving onto next block")
+        write_to_file("block failed...moving onto next block")
         return
 
 
 def load_single_block(block_hash):
-    print("parsing block %s" % block_hash)
+    write_to_file("parsing block %s" % block_hash)
     block = blockexplorer.get_block(block_hash)
     wait_and_load(block, 30, 2)
 
@@ -173,7 +178,7 @@ def load_single_block(block_hash):
 def worker_thread():
     while True:
         block_hash = task_queue.get()
-        print("enqueued hash %s" % block_hash)
+        write_to_file("enqueued hash %s" % block_hash)
         load_single_block(block_hash)
         task_queue.task_done()
 
@@ -186,12 +191,12 @@ async def client_main():
     :return: void
     """
 
-    print("addresses parsed...starting worker thread")
+    write_to_file("addresses parsed...starting worker thread")
 
     t = Thread(target=worker_thread)
     t.start()
 
-    print("worker thread started...waiting for block hash")
+    write_to_file("worker thread started...waiting for block hash")
 
     # print("testing add to queue")
     # task_queue.put("test block hash")
@@ -212,7 +217,7 @@ async def client_main():
             block_info = json.loads(messages)
             if block_info['op'] == 'block':
                 block_hash = block_info['x']['hash']
-                print("adding hash to queue hash: %s" % block_hash)
+                write_to_file("adding hash to queue hash: %s" % block_hash)
                 task_queue.put(block_hash)
 
 asyncio.get_event_loop().run_until_complete(client_main())
