@@ -178,7 +178,7 @@ def load_single_block(block_hash):
 def worker_thread():
     while True:
         block_hash = task_queue.get()
-        write_to_file("enqueued hash %s" % block_hash)
+        write_to_file("hash dequeued %s" % block_hash)
         load_single_block(block_hash)
         task_queue.task_done()
 
