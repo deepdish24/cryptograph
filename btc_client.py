@@ -191,15 +191,7 @@ async def client_main():
     :return: void
     """
 
-    write_to_file("addresses parsed...starting worker thread")
-
-    t = Thread(target=worker_thread)
-    t.start()
-
-    write_to_file("worker thread started...waiting for block hash")
-
-    # print("testing add to queue")
-    # task_queue.put("test block hash")
+    seen_hashes = set()
 
     async with websockets.connect(
             'wss://ws.blockchain.info/inv') as websocket:
@@ -217,7 +209,16 @@ async def client_main():
             block_info = json.loads(messages)
             if block_info['op'] == 'block':
                 block_hash = block_info['x']['hash']
-                write_to_file("adding hash to queue hash: %s" % block_hash)
-                task_queue.put(block_hash)
+                if block_hash not in seen_hashes:
+                    write_to_file("adding hash to queue hash: %s" % block_hash)
+                    task_queue.put(block_hash)
+                    seen_hashes.add(block_hash)
+
+write_to_file("addresses parsed...starting worker thread")
+
+t = Thread(target=worker_thread)
+t.start()
+
+write_to_file("worker thread started...waiting for block hash")
 
 asyncio.get_event_loop().run_until_complete(client_main())
