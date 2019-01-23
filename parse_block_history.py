@@ -147,29 +147,29 @@ def db_put(block):
                 batch.save(tx_object)
 
 
-def wait_and_load(block, interval_wait, num_times):
+def wait_and_load(block, interval_wait, num_times, log_file):
     if num_times < 5:
         try:
             db_put(block)
             return
         except Exception as e:
-            print("error in parsing block: %s" % str(e))
-            print("proceeding to wait...")
+            write_to_file("error in parsing block: %s" % str(e), log_file)
+            write_to_file("proceeding to wait...", log_file)
             time.sleep(interval_wait)
-            print("sleep finished...resuming")
-            wait_and_load(block, interval_wait + 60, num_times + 1)
+            write_to_file("sleep finished...resuming", log_file)
+            wait_and_load(block, interval_wait + 60, num_times + 1, log_file)
     else:
-        print("block failed...moving onto next block")
+        write_to_file("block failed...moving onto next block")
         return
 
 
-def load_blocks(num_blocks, block_hash):
+def load_blocks(num_blocks, block_hash, log_file):
     global CURR_ADDR_ID
     print("starting curr addr id is: " + str(CURR_ADDR_ID))
     block = blockexplorer.get_block(block_hash)
     for i in range(num_blocks):
         print("parsing block: %s" % block.hash)
-        wait_and_load(block, 60, 0)
+        wait_and_load(block, 60, 0, log_file)
         print("done with block: %s" % block.hash)
         block = blockexplorer.get_block(block.previous_block)
 
@@ -186,15 +186,20 @@ def load_from_block(block_height, log_file):
 
     while True:
         # print("loading block of height %d" % curr_block_height)
-        message = "loading block of height %d" % curr_block_height
-        write_to_file(message, log_file)
-        block = blockexplorer.get_block_height(curr_block_height)[0]
-        wait_and_load(block, 60, 1)
-        curr_block_height += 1
+        try:
+            message = "loading block of height %d" % curr_block_height
+            write_to_file(message, log_file)
+            block = blockexplorer.get_block_height(curr_block_height)[0]
+            wait_and_load(block, 60, 1, log_file)
 
-        if block.n_tx < 50:
-            write_to_file("sleeping...", log_file)
-            time.sleep(10)
+            if block.n_tx < 50:
+                write_to_file("sleeping...", log_file)
+                time.sleep(10)
+
+            curr_block_height += 1
+        except Exception as e:
+            write_to_file("error in retrieving block: %s" % str(e), log_file)
+            write_to_file("trying again...", log_file)
 
 
 def load_single_block(block_hash):
