@@ -11,6 +11,11 @@ from query.query_helper_backtest import get_num_addresses
 CURR_ADDR_ID = get_num_addresses()
 
 
+def write_to_file(string, fname):
+    with open(fname, "a") as f:
+        f.write(string + "\n")
+
+
 def db_put_address_inputs(addresses, tx_index):
     """
     update address/node objects with input information
@@ -169,7 +174,7 @@ def load_blocks(num_blocks, block_hash):
         block = blockexplorer.get_block(block.previous_block)
 
 
-def load_from_block(block_height):
+def load_from_block(block_height, log_file):
     """
     Function moves forward and loads blocks one by one, starting from given block height.
     In the case that a block contains less than 50 transactions, functions sleeps for 10 seconds
@@ -180,13 +185,15 @@ def load_from_block(block_height):
     curr_block_height = block_height
 
     while True:
-        print("loading block of height %d" % curr_block_height)
+        # print("loading block of height %d" % curr_block_height)
+        message = "loading block of height %d" % curr_block_height
+        write_to_file(message, log_file)
         block = blockexplorer.get_block_height(curr_block_height)[0]
         wait_and_load(block, 60, 1)
         curr_block_height += 1
 
         if block.n_tx < 50:
-            print("sleeping...")
+            write_to_file("sleeping...", log_file)
             time.sleep(10)
 
 
@@ -201,7 +208,8 @@ def load_single_block(block_hash):
 
 if __name__ == "__main__":
     block_height = int(sys.argv[1])
-    load_from_block(block_height)
+    fname = sys.argv[2]
+    load_from_block(block_height, fname)
     # block_hash = sys.argv[1]
     # load_single_block(block_hash)
     # load_blocks(20, block_hash)
