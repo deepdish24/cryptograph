@@ -3,8 +3,10 @@ import sys
 import json
 import time
 from pynamodb.exceptions import DoesNotExist
-from models.refined_models import BtcTransactions, BtcAddresses
-from query.query_helper import get_num_addresses
+# from models.refined_models import BtcTransactions, BtcAddresses
+from models.backtest_models import BtcTransactions, BtcAddresses
+# from query.query_helper import get_num_addresses
+from query.query_helper_backtest import get_num_addresses
 
 CURR_ADDR_ID = get_num_addresses()
 
@@ -89,7 +91,7 @@ def db_put_address_outputs(addresses, tx_index):
 def db_put(block):
     # iterate through transactions and write to database
     with BtcTransactions.batch_write() as batch:
-        for tx in block.transactions[1:2]:
+        for tx in block.transactions[1:]:
             try:
                 BtcTransactions.get(tx.tx_index)
             except DoesNotExist:
@@ -167,13 +169,39 @@ def load_blocks(num_blocks, block_hash):
         block = blockexplorer.get_block(block.previous_block)
 
 
+def load_from_block(block_height):
+    """
+    Function moves forward and loads blocks one by one, starting from given block height.
+    In the case that a block contains less than 50 transactions, functions sleeps for 10 seconds
+    to avoid spamming blockexplorer api endpoint
+    :param block_height:
+    :return: void
+    """
+    curr_block_height = block_height
+
+    while True:
+        print("loading block of height %d" % curr_block_height)
+        block = blockexplorer.get_block_height(curr_block_height)[0]
+        wait_and_load(block, 60, 1)
+        curr_block_height += 1
+
+        if block.n_tx < 50:
+            print("sleeping...")
+            time.sleep(10)
+
+
 def load_single_block(block_hash):
     print("loading single block...")
-    block = blockexplorer.get_block(block_hash)
-    wait_and_load(block, 0, 3)
+    block2 = blockexplorer.get_block(block_hash)
+    block = blockexplorer.get_block_height(559684)[0]
+    print("block hash: " + str(block2.hash))
+    print("block hash from height: " + str(block.hash))
+    # wait_and_load(block, 0, 3)
 
 
 if __name__ == "__main__":
-    block_hash = sys.argv[1]
-    load_single_block(block_hash)
+    block_height = int(sys.argv[1])
+    load_from_block(block_height)
+    # block_hash = sys.argv[1]
+    # load_single_block(block_hash)
     # load_blocks(20, block_hash)

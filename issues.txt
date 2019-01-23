@@ -1,0 +1,1339 @@
+creating graph...
+ERROR: Input address not clustered properly for tx: 6e6fc44c82147545ebf11cf247776e7c94d6d5bb709832f12ad8b8384325c271
+inputs: {503902, 503903}
+all cc: {89715, 4}
+ERROR: Input address not clustered properly for tx: b74dc0d1c8ae43419a99d25060f2fa84f8e0bc29c9cd771738651df9246ec165
+inputs: {506688, 506433, 506527}
+all cc: {255268, 4}
+ERROR: Input address not clustered properly for tx: f36682ff5655289e506cd8e229aebcf8c4b41789ac6432065f64371f45bd5649
+inputs: {495764, 495765}
+all cc: {4, 76815}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 44d2151104de1c6e57869bc44effc68f35eb24ee01386f60f539e8cbaae834bd
+inputs: {497395, 497589}
+all cc: {4, 210589}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 8933797dd971bdf1eda229ebab14efe3e5280575898ca54d231b93d93de2368a
+inputs: {495888, 495889, 495886, 495887}
+all cc: {373367, 4, 203623}
+ERROR: Input address not clustered properly for tx: 32519b5bd26cbe45c9ec421308d78b1330efc9b329b832dd681a033ac7c7bcd0
+inputs: {499006, 499007}
+all cc: {71688, 100798}
+Key Error
+ERROR: Input address not clustered properly for tx: 5f54ab0bce419ac335582cd59384606fb64223e40a9f1b9d638478d64e85614c
+inputs: {507833, 507834}
+all cc: {182229, 341517}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 6659ce867ef437722ce508976cb9cdf0d85256a77a0197598e0ff12656a21c10
+inputs: {490010, 490011}
+all cc: {46672, 432772}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 23c44e5da533221438f269d719c7b76bbdbb8e10ed8b3f9beac8d62d021a7a21
+inputs: {490026, 490027}
+all cc: {73514, 382910}
+ERROR: Input address not clustered properly for tx: f8e5726278f9d9967d443a304d6ddf6eeb5842611c2f9b18b9ad1cf91681e8be
+inputs: {489916, 489917}
+all cc: {344962, 360388}
+ERROR: Input address not clustered properly for tx: fc84484c3480bf324f7f8eb9c37b495a732b8d9fa272e51954b5908e6eeee3ad
+inputs: {497884, 497885}
+all cc: {321332, 54493}
+Key Error
+ERROR: Input address not clustered properly for tx: e82de919c96c379f107b80fda5c6b8c9846ba09d83234c10a61ce0bacea21143
+inputs: {505452, 505453}
+all cc: {28961, 295998}
+Key Error
+ERROR: Input address not clustered properly for tx: 0262c10e9c35016ee38b3937c4eb5a4309737e6368dcfb84cdf4a6067a5ee62b
+inputs: {495012, 495013}
+all cc: {133394, 31763}
+ERROR: Input address not clustered properly for tx: de7972365cf5631ca82931bc49b558a164422c8bc0f780f79a2492ea9229f7c6
+inputs: {492683, 498533, 498534}
+all cc: {129153, 374675, 167847}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: ddfd86ffa2d57681cc14de70662c9b3f9fcdff8ce00238da89ba78e71f5b11cd
+inputs: {499177, 499130, 499178}
+all cc: {112163, 384542, 74703}
+ERROR: Input address not clustered properly for tx: ba9d1ac356b61930c232f9773e600e128b32b6bd1dedeeb36071357880683e3b
+inputs: {463491, 488212, 478999}
+all cc: {447520, 62118}
+Key Error
+ERROR: Input address not clustered properly for tx: 19e68a8fe4fb66fb1187b8ce2830806f18adc290f9db40b2ff5c05dcae0234ec
+inputs: {488846, 488847}
+all cc: {4, 234158}
+ERROR: Input address not clustered properly for tx: 7958cd822ecdc10165195fd57330961096acd186ca3155601c465dbd3f053262
+inputs: {496252, 496253}
+all cc: {32352, 5309}
+ERROR: Input address not clustered properly for tx: 64d85da834c3f28696e2bbf6c377dc65b67f92571335fece88533d3293b9dbfc
+inputs: {506820, 506821}
+all cc: {1180, 378478}
+Key Error
+ERROR: Input address not clustered properly for tx: 38304cb1512d2b6d5f2ab217bf023fdf36fa9faca7ec774abd65ee37ab63003f
+inputs: {500300, 500301}
+all cc: {149450, 4}
+ERROR: Input address not clustered properly for tx: edf3a6eadddd0a19af10a2bbcd378708640ef289aa0800e9faee0d953da97e9a
+inputs: {201768, 504651}
+all cc: {216304, 108141}
+ERROR: Input address not clustered properly for tx: 8bf1250cbd22ee70d2b3be4e59b01c60a684779837d6ef3f1edbd0054fb4f9ef
+inputs: {493334, 493335}
+all cc: {4, 337798}
+Key Error
+ERROR: Input address not clustered properly for tx: ae5beb4c10982bfa3defc0ed91c33ac6875a0c943b6037c05042cdc1bcff6ccc
+inputs: {494778, 494739}
+all cc: {151120, 269799}
+ERROR: Input address not clustered properly for tx: 448a0abb07dea0571ab5c5eef0235f675a6b0027425bb121850b8947fb74d278
+inputs: {498208, 499683, 498549}
+all cc: {347391, 442429, 208639}
+Key Error
+ERROR: Input address not clustered properly for tx: ad95dbf41de4b46d36511a349d5a7025510868ed4ca0f755729dbbc9f599871a
+inputs: {491643, 491644}
+all cc: {4, 90453}
+Key Error
+ERROR: Input address not clustered properly for tx: 9a853ca670dadd5c893bcb61e453d7a2a84f9921a70207c89843dcd7ee1e3792
+inputs: {501674, 501678}
+all cc: {4, 393334}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 450d3a9df3e17f5e2e44df6bdbef096e4d9e94e83cb010085366d6bf2d382fbe
+inputs: {507753, 507754}
+all cc: {27728, 124759}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 1e78faf7e69b24d0c38ad65883155d0d5bc7213fb947af1a7768b9163351fa05
+inputs: {507621, 507622}
+all cc: {123280, 7179}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: f6f080cb99dfda985bad2a3517b6390a7da40bfea76f7b54f61b229840d5fc09
+inputs: {497586, 497587}
+all cc: {202865, 191724}
+Key Error
+ERROR: Input address not clustered properly for tx: 56ad2a6c36d79f7481c802daedae78156b924247ef44360b7220b01f4760604e
+inputs: {507836, 507837}
+all cc: {470603, 116651}
+Key Error
+ERROR: Input address not clustered properly for tx: 313913f41af61a5721d1a2479e77c410e6f692b898c1cef09914f8478b3cf617
+inputs: {495064, 491722, 495062, 495063}
+all cc: {143168, 113585}
+Key Error
+ERROR: Input address not clustered properly for tx: 133143c20cd1a0fbdfebf270737b02b8ac9cef01ee4ba4255f0dbe3752d4c89b
+inputs: {494760, 493341}
+all cc: {32796, 207533}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 929f12a7735dfa7dc6b1f16c0751d1123561bdf0d489e9227e328df5860b6146
+inputs: {496896, 496895}
+all cc: {19920, 4}
+ERROR: Input address not clustered properly for tx: 52d30b4122a845d14c79c901bc0108e6a7339c5212f4723c5780d44b4791442d
+inputs: {507368, 507367}
+all cc: {204730, 21926}
+Key Error
+ERROR: Input address not clustered properly for tx: f05e531ba3918acc16f5269897f880995e69fe3d93043c2469af6567ad85bf42
+inputs: {491904, 491946}
+all cc: {4, 186509}
+ERROR: Input address not clustered properly for tx: 2dbd59465315a021f40c2f80f113e5bf4e0c363e1011b5d9034a8e0830f1363f
+inputs: {495819, 495820}
+all cc: {45906, 53996}
+ERROR: Input address not clustered properly for tx: 0902d24a3752acd74d561af7cbd10f00553bc4e8fe0605e3047ed3aea0c49982
+inputs: {504754, 504755}
+all cc: {53090, 462165}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 99be90fdc7eb6fa11355eaa633631a4b3aefabbf405613c902e6d6d3c0ec321e
+inputs: {507824, 468465}
+all cc: {59488, 326451}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: dd367b96378e1e1a3c60777d9b96b65edd59425427a71680260570012af20bf0
+inputs: {493477, 493478}
+all cc: {114209, 365179}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 63b968a8c7507a19d4fca28efc07226784acdbf90d4d7d3973df40cce73ae31b
+inputs: {504625, 504626}
+all cc: {115897, 386247}
+ERROR: Input address not clustered properly for tx: 30d6b4d956a782f99395f19a3178a0756526ba3e96f9dbe5f39c7a6aaf9f1981
+inputs: {494824, 499369}
+all cc: {108530, 124636}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 925b3e62155f558ce7f6d14b82aeff3ce76d3d08e43adb8d79adfd4a7dfcff63
+inputs: {498857, 498858, 498859, 498860, 498861, 498862, 498863, 498864, 498865}
+all cc: {369568, 104715, 146096, 159477, 423705, 141919}
+ERROR: Input address not clustered properly for tx: 871ac61ab70023693f5ef34c7dc543b79c5aa2328b242c938e793931b48a3072
+inputs: {499886, 499887}
+all cc: {26467, 39158}
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: d44c45ca441fb6fae9e45dfb608db06e898f04b74fca09475545e20b52c910f1
+inputs: {498129, 502817}
+all cc: {4, 218103}
+ERROR: Input address not clustered properly for tx: 10f9c14b177dcf94201684cdf63da1dd750abd7905893493610bfbec9a7e8da5
+inputs: {500213, 500214}
+all cc: {3236, 3158}
+ERROR: Input address not clustered properly for tx: 58479cf9550aff972613b0ec80c8db4c6b02713bc08dac908dea581eece48aee
+inputs: {491821, 489415}
+all cc: {33937, 353124}
+ERROR: Input address not clustered properly for tx: a2d842a0a2809a71a64f3498de71cf1f8a6eaa92dce52c567d805ab985afe780
+inputs: {495776, 506130}
+all cc: {68643, 4}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 0e7a1a3e33febf1ede7dc402354af6ad6db82db7c49b807cd86e11dfc01a0a28
+inputs: {506282, 491983}
+all cc: {4, 86812}
+ERROR: Input address not clustered properly for tx: f6072bb31ab557e1b0d122e4094a2e0e0bc11aae38bc0004743317f623846a33
+inputs: {490489, 490490}
+all cc: {2836, 365453}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: ee828bbd7f6d1ce02f24749126f0043159de785d2a38a4112ce661f413333d64
+inputs: {488563, 488564}
+all cc: {319208, 88994}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 7ec78a8c0f77d2ebeaf6da5e60fd6f04951741af859b9ed3f9f216e4fc5230ce
+inputs: {493797, 493798}
+all cc: {352555, 399788}
+ERROR: Input address not clustered properly for tx: ce6859eb6767f0e2165ce1cd61cd91a127ad0150e3224eb02fd44ace36bafe65
+inputs: {492385, 492202, 498621}
+all cc: {4, 192310}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: f2ff8ae0436f82f726ee935a3ea030df0b08ec46c9cd17bae7d21b1a84341d22
+inputs: {506811, 506812}
+all cc: {242857, 248569}
+Key Error
+ERROR: Input address not clustered properly for tx: a8769b2e30937e044a6799d18b09effb4d926501d30f096cd9e43d14103093f4
+inputs: {506385, 498612, 498589}
+all cc: {82210, 172275, 4}
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: adf4c5b997da6e8e96fa8b54559569ab616fedf7cde1ef6d09be7c8eeb3cf0a4
+inputs: {498944, 497574}
+all cc: {100320, 4}
+ERROR: Input address not clustered properly for tx: 5046c8b2cd6c00f5170833b974601d21dd547852bf6bf218bd2c1a46d8c8269e
+inputs: {502355, 502356, 498390}
+all cc: {443121, 4}
+ERROR: Input address not clustered properly for tx: b2b3cf2e8aae2a66d0edb1eb858b7ebb19888e4533ed0215935aa0b779df1ea5
+inputs: {504608, 504607}
+all cc: {202402, 16157}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: cc59df992da503ace96f636378205d61ac96c8fd52c717b17468e806642870a4
+inputs: {492968, 492969}
+all cc: {349436, 157798}
+ERROR: Input address not clustered properly for tx: 87d750ef9a2d42b09e46386c500137db9349cdad57fa1375e2ce53466a05f8f7
+inputs: {498528, 498529, 498530}
+all cc: {340981, 96190, 47847}
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 32a6f96c692517ed0395beb26e17b85405f6057df164e0c05c14a3ef79e77fbc
+inputs: {497518, 497519}
+all cc: {479032, 10297}
+ERROR: Input address not clustered properly for tx: cdb1a9bd476f26c50b5bbc88e9da81b17e75c994ea86c7d319111b9c629af3eb
+inputs: {507696, 507756}
+all cc: {213245, 247710}
+ERROR: Input address not clustered properly for tx: 08107a484bed899eaed710482970356ee86dc33484b1e766bce8c8e1670fcd8f
+inputs: {504747, 504748}
+all cc: {338504, 122877}
+Key Error
+ERROR: Input address not clustered properly for tx: 87e145d2a81714e85eebc755f6120c12512b9a1f088b5734860eafb85ca5f834
+inputs: {503616, 503617, 500075}
+all cc: {122592, 4}
+ERROR: Input address not clustered properly for tx: ec33f7a246c9f7ee8f5be688a1f0bbaaf07ffc0b4417d496316d03be4d9d102e
+inputs: {481944, 504476}
+all cc: {4, 338775}
+ERROR: Input address not clustered properly for tx: 61472658eacc087a6b750db34b57660f0f06f77e9ac41c802f1f6bfe97d3879b
+inputs: {492033, 492028}
+all cc: {241954, 4}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: fa0885f87c7ce64f78496cb52bdd69aace685f311717d084de1baed07bc4ace4
+inputs: {494045, 494046}
+all cc: {4, 56295}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 92b3b39fdb6bfe67778e2d3cef9bcccbd9739904f039a885cdb5460faf35718e
+inputs: {496680, 496681, 496678, 496679}
+all cc: {4, 6935}
+Key Error
+ERROR: Input address not clustered properly for tx: 02e5ab85692d0a102321f68c92c0cdb93ade415b249c5c972e7783341bc43cbf
+inputs: {493752, 493753, 493754}
+all cc: {188818, 199213, 135559}
+ERROR: Input address not clustered properly for tx: a3444d3fc45e5b777e291bd105ebce2891bbb8c2bea3600e2fb8c8c257eb131c
+inputs: {507332, 507333, 507334, 507335}
+all cc: {47900, 117156, 4, 23549}
+ERROR: Input address not clustered properly for tx: 4863fcd2603d085f43a58711382956506d9a018696d4e8c030577fc4174b64ae
+inputs: {489420, 489422, 489423}
+all cc: {169792, 435259, 361580}
+ERROR: Input address not clustered properly for tx: 199e7d17666a0ba0cb95391af451dab52bfddba0ed5a4377c8a72c03b925cf86
+inputs: {491529, 488220, 488929}
+all cc: {58777, 4, 167341}
+Key Error
+ERROR: Input address not clustered properly for tx: cffb7b7b95bab5ea5adb5b1edfb1b318739b3ab1b4b4bafd1edec97a00694568
+inputs: {505513, 505514}
+all cc: {28068, 58990}
+ERROR: Input address not clustered properly for tx: 33948a8a8c3e20cc60757ee2f828989d0050ad500227148c850a1ec4f5b3f850
+inputs: {489409, 489410}
+all cc: {123057, 62257}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 076b3efe60a3be45c0dc3f32e2ef4f3b34462e0519464c9aabdf19a38e774e4d
+inputs: {490208, 499865}
+all cc: {390000, 105695}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: b1f730e830f4bb00d4ebafd027dbc5a2a76ba5470674fe66bc43602ac9133270
+inputs: {490067, 490030}
+all cc: {121419, 48259}
+ERROR: Input address not clustered properly for tx: d4f9dc0f6d7e01029f629ad21ce4a09ea364d47c32cd5f21b98de7fd6ba5d918
+inputs: {488681, 492274, 489063}
+all cc: {4, 270495}
+ERROR: Input address not clustered properly for tx: 90bf5b493f308d62b5baed43a800a7f14d091a45cf73f0cc2c3d6b27c4107e1e
+inputs: {499046, 499047}
+all cc: {7792, 213295}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: dffec2d9ea885b387d2e5c1695c15884031bb404e764d8f26feb263dcbbbdd38
+inputs: {495938, 495939, 495940, 495941, 495942, 495943, 495944, 495945}
+all cc: {4, 212073, 466800, 67441, 243639}
+ERROR: Input address not clustered properly for tx: a9a6b75f55b1ba08b902e4d53e739a5204fe2309cc9b2a57717b74ee33e023df
+inputs: {498024, 498025}
+all cc: {280, 27398}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 9490ee5bd3bfdd25ec9063fe64f81159cbceb5aaa667ef2f43291e77b54f1875
+inputs: {489978, 488610}
+all cc: {107771, 4}
+Key Error
+ERROR: Input address not clustered properly for tx: 65db5a6675e0b027c257cfe49a681b7bdc1f2af49f7eff8019ceef794c6bd2a7
+inputs: {487794, 507862}
+all cc: {234892, 36286}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: c06d5011d460c92e2f6068597ebc3ef2cb2644807adbf168f097f780cb6dd178
+inputs: {495000, 494999}
+all cc: {139281, 253917}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: a0eb8719c1604378488ea33e409d7b51ee17e9263cc18277d4cb2c4b6b111c49
+inputs: {493484, 493485}
+all cc: {176017, 439716}
+ERROR: Input address not clustered properly for tx: 50620dee48cc2a6e98e32e41c4ba4a39b09f66d7cf6818d7349d373645dfb00a
+inputs: {494881, 494306}
+all cc: {192417, 272461}
+ERROR: Input address not clustered properly for tx: 653041028934195d3f2e7531e4736794370a4773276f475115fe04d9939bd913
+inputs: {493449, 491301}
+all cc: {64508, 2989}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 03603266d0c355840c225f6aee981cab653763366f46b6b82e31f194782ca675
+inputs: {488914, 488932}
+all cc: {13091, 146223}
+ERROR: Input address not clustered properly for tx: 3f54f2c7bc59204815d553fea11f363451166a64e9db8d222f84f8c897943374
+inputs: {496833, 496834, 496835}
+all cc: {41008, 41705, 199534}
+ERROR: Input address not clustered properly for tx: f3bf01075e1a2a2824ed6d1815c3c1ce08c68822f52c9217856065ce1a9a7c65
+inputs: {497468, 500341}
+all cc: {93027, 244715}
+ERROR: Input address not clustered properly for tx: 50d3004a5fcbf03205e22ee838a5dd29f090102f37d4f3d0265536ad919fd80d
+inputs: {507976, 498769}
+all cc: {219395, 4}
+ERROR: Input address not clustered properly for tx: 1a72f0a08facb6a0af15d26fbbf551e9182eadd69801a70b3194b81ab132f94d
+inputs: {504726, 493591}
+all cc: {82195, 4}
+Key Error
+ERROR: Input address not clustered properly for tx: eb2ff829952d81350c0c1f1ba42777b08b1c360aa389f215a5c782a4be122510
+inputs: {505361, 505362}
+all cc: {4, 134637}
+Key Error
+ERROR: Input address not clustered properly for tx: d1e0b392fdfa5c9e79311f4a23530775b3abf2e2ad43b038f509345608dc56a0
+inputs: {489048, 489049}
+all cc: {164516, 203294}
+Key Error
+ERROR: Input address not clustered properly for tx: e2fdd1aa8b3fd6088e7a1bdb7eaeefd078d30910da23a95396f279711f8a187d
+inputs: {497489, 497490}
+all cc: {75324, 178334}
+Key Error
+ERROR: Input address not clustered properly for tx: 23a2396c25a5b35dfa6e620110f29f21db8531747535c2da484e02e2ad9506aa
+inputs: {499658, 507077, 498246, 502103}
+all cc: {480166, 177420, 4, 14894}
+Key Error
+ERROR: Input address not clustered properly for tx: 436e517d67d12e89a9846fa0cd0cecef5a4457cc60b19f406beea3809bd9bdd1
+inputs: {492328, 492329}
+all cc: {301713, 210047}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: a25a7f5cdb42ac0f8615df21a56b7971641d5dd141c1364e1dcdba91448a03da
+inputs: {489924, 488327}
+all cc: {7195, 4}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: c1ca9006d87bee7ff364862d3a28909502a8bb69a8b9db6d3990827c3829dd6a
+inputs: {496893, 490157}
+all cc: {258045, 218623}
+ERROR: Input address not clustered properly for tx: 8e8250bec6d9662df9bfd5180942b84676da44ef8ce8e88100409d7bcefb9ef8
+inputs: {489426, 500270}
+all cc: {361480, 33511}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 7bf1555ad66320069c10657bdce3060ef49176228a96244ba4e3f3e6e8a3ef81
+inputs: {507120, 507119}
+all cc: {60517, 286550}
+Key Error
+ERROR: Input address not clustered properly for tx: 692518cde08856e2d40a8a7b2e5cf4ab5255613dd27eb43f86fa1f4c91e57166
+inputs: {489026, 489027}
+all cc: {257242, 4}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 7202fb9f9deb0f3e97ea869960f5eafa5bbbd7ddf8698f4826a1dab5fb0e9f0c
+inputs: {500136, 489971}
+all cc: {4, 248869}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: a0440b97fd6c714672030cab685202c764f1c95ae008244f1e14ecf3f1f20c77
+inputs: {505088, 505089, 505090}
+all cc: {386284, 267717, 2284}
+ERROR: Input address not clustered properly for tx: 95f2f60740889980207c6dffaceba4c810ec5ac09f9115e9e53c33dbecb7c57a
+inputs: {492067, 492068}
+all cc: {63618, 9591}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: d255e4c78d07ac70af25f3a8c8b331c0c5703ad7640deac967ffd8695e732f98
+inputs: {490016, 490017}
+all cc: {227708, 191229}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: d23a6df5e361b3a53549aa78ae7ab3555f175b2ec079c3399d6b43df8c03d671
+inputs: {497784, 497783}
+all cc: {64571, 1117}
+ERROR: Input address not clustered properly for tx: 40cbb0261505f0d2167264de27e4c25c95e30a2009a03f077737959cc26905fa
+inputs: {489022, 489023}
+all cc: {381698, 245543}
+ERROR: Input address not clustered properly for tx: 29cbc6ac0e7190880e4523537565bfb191e79fa391a4a15939a07d78c8a07c06
+inputs: {497339, 497341}
+all cc: {260201, 176901}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 73b651bbe046417888c6ed2ddfd553fd1ffbc75b1fe49718557a201152299cf7
+inputs: {499381, 499382}
+all cc: {4, 284182}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 2612a5facfaca96f7a0c1f7894b690664415b1a36043d1c7fe6b26ccf7f80eea
+inputs: {497738, 503541, 503542}
+all cc: {259474, 4}
+Key Error
+ERROR: Input address not clustered properly for tx: cc96c38f31dedf67e3d951b5e4469a81304f905bcfa9b9fd0d119e43bb3c456e
+inputs: {493572, 489462}
+all cc: {4, 83343}
+ERROR: Input address not clustered properly for tx: 4770773bf2781821eee7b6846985df6ce28e87b69d57b12a50c4542938265662
+inputs: {497185, 497186}
+all cc: {206268, 4}
+ERROR: Input address not clustered properly for tx: 00dbb0e771b99969e51402de5a7da4fa5d78685a5c07a9a02c702e12ab0bb412
+inputs: {505378, 505379}
+all cc: {183249, 4}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 07ea75be9aaf9f1998d5a1367740143af519869aa6496f6e2cb5a67cc8bdb88b
+inputs: {499809, 499810}
+all cc: {63075, 23340}
+ERROR: Input address not clustered properly for tx: 9dbcc683770724e63f44f4f0df189d519354b0606730af5aba485457734379bb
+inputs: {497033, 497034}
+all cc: {41040, 45628}
+ERROR: Input address not clustered properly for tx: f19ba48b2fcc8f1984ff5b2d1a435749c813fa60607c70d17a4fdde3582f9eb5
+inputs: {293752, 492341}
+all cc: {51656, 4}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: f793c83b8fe5e0265858730367f3ada87c0d016e40ac80bb74f3ff34d55ae58f
+inputs: {504648, 504647}
+all cc: {462161, 238226}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: c09ee18b3c93ad4f855bfcbf5d0a61ccf317518cd7d091634ee70091f485e449
+inputs: {490568, 490569}
+all cc: {175856, 15552}
+ERROR: Input address not clustered properly for tx: e94c83958676c2a97307dadfc2579dbb2cbf2c200e91fa244230ad0ed3521cb7
+inputs: {492986, 492987, 474718}
+all cc: {339755, 216147, 26259}
+ERROR: Input address not clustered properly for tx: 44df4d3396f433fa0d720986caa1db4c2d82cf36d77cf0829e0f529fc087e2aa
+inputs: {507426, 495707}
+all cc: {311921, 22553}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: f5cc3065df58acd3a333a1f4bdccd0622e7ded2dc0e227f20c1ff5fabe110cc5
+inputs: {295843, 493126, 493127}
+all cc: {38425, 10391}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: caf51b578e2b03fb5f22c8375ca73038d131d294e7e47d47c930bacc8f35fc9d
+inputs: {497312, 497313}
+all cc: {130771, 257639}
+ERROR: Input address not clustered properly for tx: 45850de5b3c0283b8aadd51394623c913835931975ac56050c6607376a1740d8
+inputs: {500265, 500266, 500267}
+all cc: {27504, 4, 39375}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: a795b1b9bd47b5233156cbf61c1e2007db3a01562723e6c12e34380dffacdc3a
+inputs: {489912, 489913}
+all cc: {54198, 6815}
+Key Error
+ERROR: Input address not clustered properly for tx: d0ffa3f1e3fc3916867e5585f6cf6f4e35a36c7d649ebfceeeaa3f2c2e3d300e
+inputs: {505172, 505173}
+all cc: {23341, 233573}
+ERROR: Input address not clustered properly for tx: 695155211f4a0222e0a25594f012427f380688278b00bb2d2c01c7c6b4f657d4
+inputs: {497580, 497581, 497582}
+all cc: {229057, 31491, 14086}
+ERROR: Input address not clustered properly for tx: 9f112079826e86497d1cccbdb93688acf1fba9e74a6f3e55c544697f591625a0
+inputs: {490944, 490942, 490943}
+all cc: {416654, 416470, 301102}
+ERROR: Input address not clustered properly for tx: 3efdffc019e90fbe402cc936fac1b7e96a047cf120f3a767fe960b86848d931a
+inputs: {495653, 507847}
+all cc: {246969, 4}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: bd8e7a2c7172e90be1292f370d28fd46df9a71bab16a47f4f2e8d9e368c4138f
+inputs: {498970, 498717}
+all cc: {220297, 32900}
+Key Error
+ERROR: Input address not clustered properly for tx: 55c3727be7891ef85565586b11a0985cc2810603767fafa8d11247dc62e6e571
+inputs: {488977, 472915}
+all cc: {54756, 48724}
+ERROR: Input address not clustered properly for tx: e7f8f55949a78cc7c1dd4f06ac9cbd27e4c645ef9242801a05c04e5ce991173c
+inputs: {490624, 490625, 490619, 490620, 490621, 490622, 490623}
+all cc: {27489, 4, 2629, 222794, 193585, 161015, 419257}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: febf1d876a5a2127eadf4820b4e2a3a70d87029712821fb8ced6b6b7e6d58be9
+inputs: {494939, 494940}
+all cc: {4, 132494}
+ERROR: Input address not clustered properly for tx: e554276f0f4d8f18e970b3d582adbf77f11e342f4c6c3c74796769ef2a2af1f8
+inputs: {496772, 490252}
+all cc: {4, 371229}
+ERROR: Input address not clustered properly for tx: 79d7d7f57cd250e98c5f72d0d3293463014bdcbe8ea40a7a62ad7970d3352677
+inputs: {505529, 505530}
+all cc: {16728, 359987}
+ERROR: Input address not clustered properly for tx: 4802b3941b80c0c11c99ea671f269179c0fbe95d4448d738ce38eebf4dda7ec2
+inputs: {507250, 506749, 496262}
+all cc: {240322, 4, 6197}
+ERROR: Input address not clustered properly for tx: 636e997ac7aa850a12d5408151b21e0cd97bb06d6aa4d5ae7b53ebd48602c46e
+inputs: {504266, 504267, 504268, 504269, 504270, 504271}
+all cc: {95296, 136194, 204685, 256720, 389043}
+ERROR: Input address not clustered properly for tx: 23fe16a6d25bc5a8c68a9262a4ef826bd54194d772391038e5b453e7ac106b57
+inputs: {502096, 502095}
+all cc: {95021, 63862}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 56046cd096458aeb3f07266fdd89a215743bfe3f772b39b83e7c3652e527af83
+inputs: {504802, 490550}
+all cc: {34220, 254087}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 10c5c29dc488a42a97cb3e865bc2638a23db3726975cc03a786dea3669a87e83
+inputs: {492381, 497462}
+all cc: {408901, 66189}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 2674d6931226bd6fc73b3b70571771a62bb030cf10e1a78a2a9a0a5ed2bf4391
+inputs: {490155, 490156}
+all cc: {285418, 42507}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: d8a053b7d94a14d02d95eb975e567df018147bb20945f85ae0bd6cf782e3c520
+inputs: {507177, 491356}
+all cc: {77346, 210542}
+ERROR: Input address not clustered properly for tx: a3626964313893e2b12403536d63642e4d28b1bea3a73b1974e22d53df269749
+inputs: {488192, 488193, 488194, 488195}
+all cc: {62976, 424987, 486667, 484190}
+ERROR: Input address not clustered properly for tx: 49dd23559e193ab50f934d16cf76378a950fe21ec1693d178ba169a2227f421f
+inputs: {503051, 493965}
+all cc: {4, 6406}
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: b20dddf1c827cf5ee2c15a31ee59d22f2dbdd763916ed0e30590640c9f8df6e2
+inputs: {491531, 491524}
+all cc: {317564, 32543}
+ERROR: Input address not clustered properly for tx: 32f4bd9900e335622590d32f1b94fb06722e7bc800d9884de9a23549ea4ce9bc
+inputs: {504758, 504759}
+all cc: {129544, 131801}
+ERROR: Input address not clustered properly for tx: f8fc5c1fe9c0d41107dd927dfd798a286aa7fef4ac354bb21f0380a95fc497a2
+inputs: {500010, 504654}
+all cc: {204144, 56103}
+Key Error
+ERROR: Input address not clustered properly for tx: 5b4a0ca4b9d8415bd74fe2877c20dd2f019eca496caa2579fba36c529f014fd8
+inputs: {495145, 495146}
+all cc: {218488, 59475}
+Key Error
+ERROR: Input address not clustered properly for tx: 66f73db5451a53cf4020a0b09dec3a31a79301c0ac18856630659918d0c5de45
+inputs: {495893, 495894}
+all cc: {151825, 31283}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: b571d4d6d96f9b5adeab4600a1c19147ee2a847c7b4f5af92ac6a40945a8b98f
+inputs: {505397, 505398}
+all cc: {353330, 333918}
+ERROR: Input address not clustered properly for tx: ec17281896322952fa565526e862a285c337c4da98e1284d019a1499ba83ab2b
+inputs: {506675, 506676, 506677, 506678, 506679}
+all cc: {144930, 4, 459756, 145489, 259480}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 42d4091b1cfce6040bcdf6a1933a3011e06b1e84f4776a95624fd08a1db2bbee
+inputs: {504472, 504473, 395445}
+all cc: {127170, 4}
+ERROR: Input address not clustered properly for tx: c3872f083648427d51812e3dfb3c3d9eeeae068c487fe91990e017ba180ddec9
+inputs: {491347, 491348}
+all cc: {29002, 168135}
+ERROR: Input address not clustered properly for tx: 66c1113b153c91f3306171d615234a8e1b8634f5376083c0722af85b18a06a1a
+inputs: {494825, 494826}
+all cc: {221116, 404549}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: e8bb344cfb731f852432d7cd626044ddaab066687d59a367fbec7649140a8c34
+inputs: {489560, 491127}
+all cc: {195861, 52645}
+ERROR: Input address not clustered properly for tx: df3992852a39b75c14f26d0aba4026111c945e2fcbd5ced34693d448fcc7e9fd
+inputs: {507040, 507041}
+all cc: {115778, 71823}
+ERROR: Input address not clustered properly for tx: 61a1ef8535bd29bedcc2093aa6d6ad678e54360ba1cf573ec98b010aba47e60d
+inputs: {491632, 491633}
+all cc: {174226, 214029}
+ERROR: Input address not clustered properly for tx: b124a07a00d6e5e78394af01e25fac0121b3c35e2b8bf53579d6b89ac8ff72c9
+inputs: {505510, 505511}
+all cc: {120352, 286945}
+Key Error
+ERROR: Input address not clustered properly for tx: fd3217830d061b29ceab92074cf68e66acda8b5ebda53cc16e9c7b14744a5430
+inputs: {499616, 499617}
+all cc: {238411, 24909}
+ERROR: Input address not clustered properly for tx: 3395ae38ff568ff96380920ebcc6d2194bbd98221d48d9103940386efd6d7bb5
+inputs: {497858, 497859, 497860}
+all cc: {229713, 306093, 334535}
+ERROR: Input address not clustered properly for tx: 98cc2a5956ac962f3749a34679cf17973237fce461b096f835790009b89dbdef
+inputs: {502920, 502918, 502919}
+all cc: {76296, 4}
+Key Error
+ERROR: Input address not clustered properly for tx: cd2f31caace7c84807e947407fbe029e0ca133921f1ab59907710ddb01ee7c30
+inputs: {497649, 497650}
+all cc: {109556, 4}
+ERROR: Input address not clustered properly for tx: 02b2c5eae63ae6134d23917d0be8c5dde0ac08de80bf6330a7e96ffe10eca121
+inputs: {499857, 499858}
+all cc: {142976, 88785}
+ERROR: Input address not clustered properly for tx: 2da91e11389828a09fb9a665da63361fcc7427e8d4ac5efe22ba740be8b87a2c
+inputs: {507826, 507827}
+all cc: {248552, 66943}
+ERROR: Input address not clustered properly for tx: 6c17fc91395dc188472b83dc4dc1e768e9eb8bc53cd14c18bf4bd274284c7187
+inputs: {491406, 491407}
+all cc: {23000, 10222}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: b8443205177c2d7f8d406aacc22e54242547377f3bed6319da856639d18f838b
+inputs: {495898, 502222}
+all cc: {4, 125461}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 9677bd60fec0f9ead1ed16ea4999c58a393d0ac4ff46e0daa6a053f533362e5a
+inputs: {499014, 499015}
+all cc: {415512, 4}
+ERROR: Input address not clustered properly for tx: f17a7b59bdabfe93fa20cdac6c14f969d6e0b4e36a8f0db07354df7eccf28c9c
+inputs: {488717, 488719}
+all cc: {37185, 32979}
+ERROR: Input address not clustered properly for tx: 7df8d9c1aef59192bf36b8a45c8b985410f7a7856ca60de2ed908f9ee84e27c4
+inputs: {488187, 488188, 488189, 488190}
+all cc: {253545, 56722, 4, 185614}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 02d4366dcdf1e49a9ce9065e8351c099124c352e0801489992d8cdecfaa01de7
+inputs: {501702, 498271}
+all cc: {4, 314188}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: e991b9a7a66fc22ab3b513578fc271ca59cc42d9520baa41386e8de363075950
+inputs: {494643, 494644}
+all cc: {101622, 34351}
+ERROR: Input address not clustered properly for tx: 44e1a8ab9cdad0194ed0e7adbcf8b82fd2f30bfdd71c417079652275c1e461bc
+inputs: {488276, 485350}
+all cc: {288856, 4}
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 110f0783b86942e6cd8a1e715c4ada4eddc52d2f79010ebcaaf8520ac4db3bf1
+inputs: {499743, 500071}
+all cc: {50698, 159803}
+Key Error
+ERROR: Input address not clustered properly for tx: 23bf891455fcbfaa475a2a74e22fa39b206c8c7901950242463984244612362d
+inputs: {497576, 492913}
+all cc: {98656, 158680}
+Key Error
+ERROR: Input address not clustered properly for tx: 2c465202a588f7169dc31417a2238c5c0a30c8f85e0c6416dfb27915f6ca66aa
+inputs: {504657, 504658}
+all cc: {370770, 25783}
+Key Error
+ERROR: Input address not clustered properly for tx: 1483e9729c8e02cbe96e564e1601bc97289037f5cae5c31e61631b780e810d07
+inputs: {488424, 488421, 488422, 488423}
+all cc: {129322, 192061, 353885, 331054}
+ERROR: Input address not clustered properly for tx: 2046500b13fb4e71a1ad086aaab04e1f65fc7d18bf00292251898354950f1701
+inputs: {500131, 500132}
+all cc: {350033, 60651}
+Key Error
+ERROR: Input address not clustered properly for tx: bd478bb0c899d5049150ffafaafc025abc46f41af3d1b8785a31b9da298ae12c
+inputs: {493554, 501252}
+all cc: {151786, 4}
+ERROR: Input address not clustered properly for tx: 588eee318fb9fe9e9a57cd7e557a598194371c405cceaaac20857a10fb272227
+inputs: {492362, 489790}
+all cc: {45907, 4}
+ERROR: Input address not clustered properly for tx: 415852a2243b669437e4bb105bb69d043777c62b8910cca77665a29a65f47db2
+inputs: {506162, 507484}
+all cc: {215642, 4}
+ERROR: Input address not clustered properly for tx: 853aafb03695d9274be9d1ebf46e33873794d2e621abfcdd6c263e9134c97560
+inputs: {499651, 499652}
+all cc: {89241, 30753}
+Key Error
+ERROR: Input address not clustered properly for tx: 0e25bda634eaf73be6fa83aee60c62592764d3fb2bb85b3929ec79291fddc03e
+inputs: {492819, 487973}
+all cc: {132219, 4}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: f182fab5240a73fe49b8b9251cb04a35c2489330ddc3f0c1243a831708e8c515
+inputs: {490192, 492936}
+all cc: {150216, 106001}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 9f4648b13bd1ecd794b84e34ba65fff3ae09961509f1f936857ff8147ca506e4
+inputs: {19597, 507801, 507802, 426395, 67228, 507803, 507804, 507805, 507808, 507809, 507810, 507811, 507812, 507813, 507814, 507806, 507807, 374984, 11604, 52949, 464102}
+all cc: {4, 18790, 109358, 286864, 22834, 54456, 103035}
+ERROR: Input address not clustered properly for tx: d31a6ce8bc8ab51bb8af7156b133672989c8091d7bf3b1b2901504c0d2cfa990
+inputs: {499706, 499707}
+all cc: {48504, 56229}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: fc46ea3e41748b28c8a7d2e5d7133a131a32b3da946dcb042611918672a59a73
+inputs: {504681, 489949}
+all cc: {20432, 308282}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 9dd4b12bd6324649f30afc81e9ce267b65f2bd0de1896cf5c39eed5cb50d9cbd
+inputs: {494091, 493883}
+all cc: {350749, 117991}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 57ee887e7ea60b4b7c8f12a6122dc932b94f0d93a513a52d99453c7902b0c208
+inputs: {506808, 506809}
+all cc: {4, 173093}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 7ae996a3b30d59d2555ca4de71b9ee938216d42d3734807cac1c229e24952504
+inputs: {498402, 498403}
+all cc: {68530, 224866}
+ERROR: Input address not clustered properly for tx: ed9f5aaa5877ba158c629817f494b3539fc08fcf28bd9cbe563ff6b79767beb8
+inputs: {494754, 494755}
+all cc: {33499, 103510}
+Key Error
+ERROR: Input address not clustered properly for tx: dbf91fe4d676885cca0d04e3bb0c169091372d5e49cafee2e37a965ab0ff90ba
+inputs: {493646, 493647}
+all cc: {382715, 322572}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 2810f2338fdbdff6cd7d0d0770ccbcf67bf659c4180589024b7b4bdd8d664a39
+inputs: {500277, 500278, 500279}
+all cc: {58027, 82164, 97269}
+ERROR: Input address not clustered properly for tx: acb6f501532d1ad343393d28b3fdbfa95730663f948851100cca15c60ca7316d
+inputs: {504616, 504614, 504615}
+all cc: {212650, 402813, 133247}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: d7201d8f2535104512d365806346dfb09ec3d142e062f6157629360c131e1941
+inputs: {507115, 500580}
+all cc: {4, 203205}
+ERROR: Input address not clustered properly for tx: d8785299f1848ebee6845cab983d3e87105832d7ab09fe973c6ac09167f05843
+inputs: {497526, 497527}
+all cc: {4, 319503}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 6c8676ad61c431ff8b48717069f3fcd46c8e04fcff429ac7ef2ff7355ad6e9bb
+inputs: {492673, 497465}
+all cc: {349328, 35922}
+Key Error
+ERROR: Input address not clustered properly for tx: 26fa3d076a24362174bd8059fc0573f7275b7583803acd87118db0cd8ca8a025
+inputs: {494944, 494943}
+all cc: {216706, 360939}
+ERROR: Input address not clustered properly for tx: 83d6eca998781807a174fcea908b07184748db59e7086b9ca9f2b2b37f5e5fd8
+inputs: {492058, 491076}
+all cc: {166477, 76541}
+Key Error
+ERROR: Input address not clustered properly for tx: 22f33d8f6c9e5790ec45cfc8cc42dd3275738abaf3a55f816dfc09287fdba48c
+inputs: {496400, 496382}
+all cc: {17057, 411255}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 612252130fca58ff6a0b6e2ebe8996cf5705c073d869133c5bebaf0ccd2de69b
+inputs: {495906, 506711}
+all cc: {158681, 226758}
+ERROR: Input address not clustered properly for tx: 4be518207b6faf29ecce5a9967df1e33ee386256166a6c2a375e9f26ba9a8694
+inputs: {492184, 492185}
+all cc: {368693, 195519}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 9fa8415ce123d0d7eddd03319d0ef05d6b7702aa3af68979966c18cb254e3783
+inputs: {505883, 506302}
+all cc: {290857, 4}
+ERROR: Input address not clustered properly for tx: 6c0199eba6cbcb4239216d89a4783eb43f4008119afe6f710975247ffa773ebc
+inputs: {505555, 505829}
+all cc: {4, 96653}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: a9f7d0c9a93aa747d0ae4e5c51f388519e8b82afbebb5f45faf3fbd9768ecd24
+inputs: {495046, 502871}
+all cc: {36436, 4}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 716639dce23cd3e22fbcfa18c6a4101b195ace177c2e9420394663eb0eba6510
+inputs: {490152, 490153}
+all cc: {187947, 4}
+Key Error
+ERROR: Input address not clustered properly for tx: a50f1645feec5b3f7de169e484c52abad136ff356605a49406ae9e5b4dff5126
+inputs: {497522, 497523}
+all cc: {119493, 15646}
+ERROR: Input address not clustered properly for tx: c6aaca9a7913ede1c403177b3a3f6aae765d60e0299349656a22b7ea9bc0d43a
+inputs: {507200, 497371}
+all cc: {45393, 204759}
+ERROR: Input address not clustered properly for tx: 3fb573acbe259097788bf10bf968888f3c2b8b4642dc00025605a3129ec8b777
+inputs: {507146, 494814}
+all cc: {8185, 73555}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 41a9b8e180fa30ed972a97620478671bd5898b285afe010f151d125a2037912c
+inputs: {496432, 496433}
+all cc: {389568, 179740}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 6ee37eed32c7ddcb2cfdb73897be0d51425a28fa29d2f38f7756f19e6c8b2d33
+inputs: {488812, 488813}
+all cc: {201835, 166583}
+Key Error
+ERROR: Input address not clustered properly for tx: 2afd244dd7a26b1d9720b7f9a3265e51c2066ba83984fe8bc26b2eacbf98a7bf
+inputs: {493661, 493662}
+all cc: {189075, 217005}
+ERROR: Input address not clustered properly for tx: 3c482c8e787d21622ba043417fb8c8808821aa0449b8960e138610d088873a71
+inputs: {489176, 489177}
+all cc: {74704, 74505}
+ERROR: Input address not clustered properly for tx: 392ca6054082e7d6ecfc582b146acefbfc33dbdd37f39d802296f160c0c12d89
+inputs: {504684, 504685}
+all cc: {80985, 142422}
+ERROR: Input address not clustered properly for tx: edc23f810b6a85a6e9e69094f8f47549259adfd67ede92c5ba0c7b915d3d9cfa
+inputs: {496045, 496046}
+all cc: {279280, 237897}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: b856b9d0834ab4844f97eb5cdd8be801ea5b59d07b22f61c516952c74810315a
+inputs: {491724, 497407}
+all cc: {10061, 352150}
+Key Error
+ERROR: Input address not clustered properly for tx: 52b453a48e899f847ac327a40c17843a4c0455bfbfc0bdd12eeeed0a8151d758
+inputs: {497308, 497309}
+all cc: {6576, 103248}
+Key Error
+ERROR: Input address not clustered properly for tx: f8e6e870a2dd68e19afdc629be01b22c45bbfd69e1f636ada984683ec6e82a10
+inputs: {509280, 502926}
+all cc: {138787, 4}
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 92ae49861a10464858796acd5f9164cb89431321c50199e8ceac906bcacf1dd6
+inputs: {507456, 494402}
+all cc: {125475, 154539}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: f5328a41f92145c80a9d0d999063edf138001d8628e17b320ed5fecc8b894d21
+inputs: {500120, 492306}
+all cc: {167082, 194214}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 50f8d83167228d9ec1d09bd54084771ab04de215c0d8743eda9b2266f927f09d
+inputs: {496425, 496426}
+all cc: {31451, 181613}
+ERROR: Input address not clustered properly for tx: 4bb8ddc8d1da26bcbb08d9bc22d0cfd57900fa65fbc535cf9c988e1eb686b34e
+inputs: {504563, 504564}
+all cc: {151982, 55926}
+ERROR: Input address not clustered properly for tx: b298164d1c0cdbdb2cffd7dffca8f009aafbe029344ac3a27e7501d9e09cc2be
+inputs: {490253, 490254}
+all cc: {4, 95343}
+ERROR: Input address not clustered properly for tx: f47e3a043d97b0616e81db4a102508e15b4162c0add3eba460a4edb03f116184
+inputs: {494162, 487855}
+all cc: {38977, 106737}
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: d1d875181d07dc2a9a4bc9a0430f9bacc7796ecd8d7bf46ca88303b8477792b1
+inputs: {494142, 494143}
+all cc: {65625, 33422}
+Key Error
+ERROR: Input address not clustered properly for tx: 4574a90c1fa8e9872d4783b133eff0b2c67b9905aaed45277db8b9c977488200
+inputs: {490048, 490049, 490050, 490051, 490052, 490047}
+all cc: {4, 295367, 88842, 471828, 273914}
+ERROR: Input address not clustered properly for tx: 47827a3013f213e36b0ae3b674b151d77a6e19ad8266dd97609592605543a9ff
+inputs: {488736, 492277}
+all cc: {411286, 332238}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 0ef66495741f5f7731d5e4a3c5e99c8982036c6d3c514f7f7ff9c793c2add40a
+inputs: {495207, 495208, 495209, 495210, 495211, 495212}
+all cc: {4, 13864, 186989, 204797, 385469}
+ERROR: Input address not clustered properly for tx: 80fc9c2688643087df064850df38dfa01ff0fabc2258b3d7683da9f5ce1f9385
+inputs: {488729, 488730}
+all cc: {155254, 454574}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 847c0bbca0627743266e55012f138df1c9eae889f716502fa75cd5d79716aacf
+inputs: {499043, 499044}
+all cc: {95713, 330060}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: f25b6041fe07284e3aaa5c8871e05f996b425bb140fb48655d7e3b8efc3cdb66
+inputs: {507241, 507242, 507243, 507244}
+all cc: {172248, 191802, 22940, 331774}
+ERROR: Input address not clustered properly for tx: 980d7600ada725208586939008e9645cec7bcde016cfd1f8cba1151023ff0209
+inputs: {498445, 494862}
+all cc: {210162, 228019}
+Key Error
+ERROR: Input address not clustered properly for tx: b9263e4306e8391aa0628a7e7a32a2ebf06321eb6b9aaefd41b5cb51179b323d
+inputs: {504636, 504637}
+all cc: {169992, 271828}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 4841d025e3254a3837ac5281cd3a3ffec3eae4f9276675227f516c3849e5f35d
+inputs: {504640, 504641}
+all cc: {483830, 66007}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: f8f1d1548f391cc57cf6959a5ae7a50299fb74eeff136080ed8614ba51e4abdc
+inputs: {490064, 492170, 490062, 490063}
+all cc: {9097, 4, 35117, 262998}
+ERROR: Input address not clustered properly for tx: 4bd77d2bafa455896e6458b282d5b3a7d6551f35fe760976b58d9e5b55a5facb
+inputs: {491292, 492287}
+all cc: {109736, 192039}
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: a2701ecf08ba90cfc182908ae70f8621c86b7ed7b90c476d2384b32ba4fe7672
+inputs: {506773, 506774}
+all cc: {416905, 163895}
+Key Error
+ERROR: Input address not clustered properly for tx: 70de787c3e16ad57e0ee8bd09da0f60f92e1a4282814cf39d48bcf00d9269c2e
+inputs: {42675, 503180}
+all cc: {4, 331830}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 1491c5c19d171a7d569d98850e385be466c5815905058a9b8021805bf6f87a62
+inputs: {488272, 488273, 488271}
+all cc: {1048, 4, 101430}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: ad65a14f981aa94a616b5819646ba29c7173e2c6d803933b352a38ba07e510ee
+inputs: {498595, 498596}
+all cc: {47531, 240732}
+ERROR: Input address not clustered properly for tx: 455a13b336c11508db3ac3a623042c9dbc82fbf45760f82a7bdbca4d9d852d30
+inputs: {493965, 488543}
+all cc: {4, 6406}
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 9c7368c9d626ce7cb8941ac202ce5b8f000f3e6bd9c280534d83939fa1a2da80
+inputs: {491304, 491303}
+all cc: {370849, 345804}
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+Key Error
+ERROR: Input address not clustered properly for tx: 2294ed33f19260811729b1c9301e208312cefe43c03be95ea7b270a67ec871b5
+inputs: {505336, 505335}
+all cc: {4, 36934}
+Key Error
+Key Error
+Key Error
+Key Error

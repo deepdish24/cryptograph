@@ -82,17 +82,19 @@ def create_entire_graph(graph_file):
             for addr in input_addr:
                 try:
                     node_id = addr_to_node_id[addr]
+                    # wtf...why would this happen at all
                 except KeyError as e:
                     print("Key Error")
                     continue
                 all_node_ids.add(node_id)
 
             # check to see if all input address are clustered properly
+            # error here means error with union-find step above
             if len(all_node_ids) > 1:
                 print("ERROR: Input address not clustered properly for tx: %s" % tx.tx_hash)
                 print("inputs: " + str(input_addr))
                 print("all cc: " + str(all_node_ids))
-                break
+                continue
 
             if len(all_node_ids) == 0:
                 continue
