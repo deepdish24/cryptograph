@@ -4,16 +4,21 @@ import json
 import time
 from pynamodb.exceptions import DoesNotExist
 # from models.refined_models import BtcTransactions, BtcAddresses
-from models.backtest_models import BtcTransactions, BtcAddresses
+# from models.backtest_models import BtcTransactions, BtcAddresses
+from models.testdb_models import BtcTransactions, BtcAddresses
 # from query.query_helper import get_num_addresses
-from query.query_helper_backtest import get_num_addresses
+# from query.query_helper_backtest import get_num_addresses
+from query.query_helper_testdb import get_num_addresses
 
 CURR_ADDR_ID = get_num_addresses()
+last_seen_addrs = set()
+fname = ""
 
 
 def write_to_file(string, fname):
-    with open(fname, "a") as f:
-        f.write(string + "\n")
+    if fname != "":
+        with open(fname, "a") as f:
+            f.write(string + "\n")
 
 
 def db_put_address_inputs(addresses, tx_index):
@@ -24,7 +29,7 @@ def db_put_address_inputs(addresses, tx_index):
     """
 
     global CURR_ADDR_ID
-    addr_objs = {x.address: x for x in BtcAddresses.batch_get(addresses)}
+    addr_objs = {x.address: x for x in BtcAddresses.batch_get(addresses, consistent_read=True)}
 
     for address in addresses:
         if address in addr_objs:
@@ -67,7 +72,7 @@ def db_put_address_outputs(addresses, tx_index):
     """
     global CURR_ADDR_ID
 
-    addr_objs = {x.address: x for x in BtcAddresses.batch_get(addresses)}
+    addr_objs = {x.address: x for x in BtcAddresses.batch_get(addresses, consistent_read=True)}
 
     with BtcAddresses.batch_write() as batch:
         for address in addresses:
@@ -93,9 +98,46 @@ def db_put_address_outputs(addresses, tx_index):
     return addr_objs
 
 
+def wait_for_dynamo_sync(addresses):
+    """
+    Since DynamoDB is eventually consistent, function waits for address objects to be
+    stored in database before re-querying for object. This function is called with the
+    addresses of the last three seen transactions, to make sure that no address object
+    is seen and then overwritten (because database write does not have strong consistency)
+
+    :param addresses: set of addresses to check for
+    :return: function returns once all addresses are retrievable
+    """
+    global fname
+    all_retrievable = False
+
+    while not all_retrievable:
+        can_retrieve_all = True
+
+        for addr in addresses:
+            try:
+                BtcAddresses.get(addr)
+            except DoesNotExist:
+                can_retrieve_all = False
+                break
+
+        all_retrievable = can_retrieve_all
+
+        if not all_retrievable:
+            write_to_file("sleeping for strong consistency...", fname)
+            time.sleep(10)
+
+
 def db_put(block):
+
+    global last_seen_addrs
+
+    # reset the set of last seen addresses
+    last_seen_addrs = set()
+
     # iterate through transactions and write to database
     with BtcTransactions.batch_write() as batch:
+        ctr = 0
         for tx in block.transactions[1:]:
             try:
                 BtcTransactions.get(tx.tx_index)
@@ -110,6 +152,16 @@ def db_put(block):
 
                 addresses_input = set(x.address for x in valid_inputs)
                 addresses_output = set(x.address for x in valid_outputs)
+
+                input_last_seen = addresses_input & last_seen_addrs
+                output_last_seen = addresses_output & last_seen_addrs
+
+                # check for strong consistency
+                if len(input_last_seen) > 0:
+                    wait_for_dynamo_sync(input_last_seen)
+
+                if len(output_last_seen) > 0:
+                    wait_for_dynamo_sync(output_last_seen)
 
                 # add addresses to database and/or update address tx info
                 addr_objs_input = db_put_address_inputs(addresses_input, tx.tx_index)
@@ -146,6 +198,14 @@ def db_put(block):
                                             )
                 batch.save(tx_object)
 
+                ctr += 1
+
+                # for every three addresses, reset last seen address
+                if ctr % 3 == 0:
+                    last_seen_addrs = addresses_input | addresses_output
+                else:
+                    last_seen_addrs = last_seen_addrs | addresses_input | addresses_output
+
 
 def wait_and_load(block, interval_wait, num_times, log_file):
     if num_times < 5:
@@ -158,6 +218,22 @@ def wait_and_load(block, interval_wait, num_times, log_file):
             time.sleep(interval_wait)
             write_to_file("sleep finished...resuming", log_file)
             wait_and_load(block, interval_wait + 60, num_times + 1, log_file)
+    else:
+        write_to_file("block failed...moving onto next block")
+        return
+
+
+def wait_and_load_no_log(block, interval_wait, num_times):
+    if num_times < 5:
+        try:
+            db_put(block)
+            return
+        except Exception as e:
+            print("error in parsing block: %s" % str(e))
+            print("proceeding to wait...")
+            time.sleep(interval_wait)
+            print("sleep finished...resuming")
+            wait_and_load_no_log(block, interval_wait + 60, num_times + 1)
     else:
         write_to_file("block failed...moving onto next block")
         return
@@ -202,6 +278,35 @@ def load_from_block(block_height, log_file):
             write_to_file("trying again...", log_file)
 
 
+def load_num_blocks(block_height, num_blocks):
+    """
+    Function loads num blocks starting with block of height block_height
+    in blockchain
+
+    :param block_height: starting block
+    :param num_blocks: number of blocks to parse
+    :return: void
+    """
+    curr_block_height = block_height
+
+    for i in range(num_blocks):
+        # print("loading block of height %d" % curr_block_height)
+        try:
+            message = "loading block of height %d" % curr_block_height
+            print(message)
+            block = blockexplorer.get_block_height(curr_block_height)[0]
+            wait_and_load_no_log(block, 60, 1)
+
+            if block.n_tx < 50:
+                print("sleeping...")
+                time.sleep(10)
+
+            curr_block_height += 1
+        except Exception as e:
+            print("error in retrieving block: %s" % str(e))
+            print("trying again...")
+
+
 def load_single_block(block_hash):
     print("loading single block...")
     block2 = blockexplorer.get_block(block_hash)
@@ -212,9 +317,14 @@ def load_single_block(block_hash):
 
 
 if __name__ == "__main__":
-    block_height = int(sys.argv[1])
-    fname = sys.argv[2]
-    load_from_block(block_height, fname)
-    # block_hash = sys.argv[1]
-    # load_single_block(block_hash)
-    # load_blocks(20, block_hash)
+    if sys.argv[1] == "--cap":
+        block_height = int(sys.argv[2])
+        num_blocks = int(sys.argv[3])
+        load_num_blocks(block_height, num_blocks)
+    elif sys.argv[1] == "--single":
+        block_hash = sys.argv[2]
+        load_single_block(block_hash)
+    else:
+        block_height = int(sys.argv[1])
+        fname = sys.argv[2]
+        load_from_block(block_height, fname)

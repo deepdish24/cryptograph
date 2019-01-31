@@ -14,5 +14,13 @@ def address_check():
     print(addr_obj.__dict__)
 
 
+def find_address_for_identifier(identifier):
+    for address_obj in BtcAddresses.scan():
+        if address_obj.identifier == identifier:
+            print(address_obj.address)
+
+    print("Done!")
+
+
 if __name__ == "__main__":
     print("num addresses: " + str(get_num_addresses()))

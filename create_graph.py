@@ -1,14 +1,15 @@
-from models.refined_models import BtcAddresses, BtcTransactions
+# from models.refined_models import BtcAddresses, BtcTransactions
+# from models.backtest_models import BtcAddresses, BtcTransactions
+# from models.testdb_models import BtcAddresses, BtcTransactions
 from python_algorithms.basic.union_find import UF
-from query.query_helper import get_num_addresses
 import pickle
 import json
 import sys
 
 
-def get_cc(recompute=False):
+def get_cc(recompute):
     if not recompute:
-        with open("pickles/cc.pickle", "rb") as f:
+        with open("pickles/cc_hist.pickle", "rb") as f:
             dct = pickle.load(f)
 
         return dct, len(dct.keys())
@@ -16,9 +17,10 @@ def get_cc(recompute=False):
     print("identifying nodes...")
     addr_dct = {x.identifier: x for x in BtcAddresses.scan()}
     addr_identifiers = addr_dct.keys()
-    max_id = get_num_addresses()
+    # max_id = get_num_addresses()
+    num_nodes = max(addr_identifiers) + 1
     print("num addresses: " + str(len(addr_identifiers)))
-    union_find = UF(max_id)
+    union_find = UF(num_nodes)
 
     for identifier, address_struct in addr_dct.items():
         neighbor_addrs = json.loads(address_struct.neighbor_addrs)
@@ -30,7 +32,7 @@ def get_cc(recompute=False):
     print("===== union find done =====")
     print("normalizing node ids...")
 
-    # need to re-number groups so that node numbers go from 0 - num_connected_components
+    # need to re-number groups so that node numbers go from 0 to num_connected_components
 
     init_node_id = 0
 
@@ -51,7 +53,7 @@ def get_cc(recompute=False):
 
         addr_to_node_id[identifier] = node_id_post
 
-    with open("pickles/cc.pickle", "wb") as handle:
+    with open("pickles/cc_hist.pickle", "wb") as handle:
         pickle.dump(addr_to_node_id, handle)
 
     print("cc pickled, creating graph...")
@@ -59,12 +61,16 @@ def get_cc(recompute=False):
     return addr_to_node_id, len(addr_to_node_id.keys())
 
 
-def create_entire_graph(graph_file):
+def create_entire_graph(graph_file, recompute=False):
     # we first create mapping of address identifier to node_id so that
     # clustered graph can be created. Additional clustering metrics will
     # be added in here later (TODO)
 
-    addr_to_node_id, num_components = get_cc()
+    print("code in function")
+
+    addr_to_node_id, num_components = get_cc(recompute)
+    addresses = len(addr_to_node_id.keys())
+    # print("num addresses: " + str(addresses))
 
     print("creating graph...")
 
@@ -82,11 +88,12 @@ def create_entire_graph(graph_file):
             for addr in input_addr:
                 try:
                     node_id = addr_to_node_id[addr]
-                    # wtf...why would this happen at all
+                    # this is probably happening because we are concurrently updating
+                    # transactions table while using stale cc info
+                    all_node_ids.add(node_id)
                 except KeyError as e:
-                    print("Key Error")
-                    continue
-                all_node_ids.add(node_id)
+                    print("key error captured!")
+                    sys.exit(1)
 
             # check to see if all input address are clustered properly
             # error here means error with union-find step above
@@ -94,7 +101,8 @@ def create_entire_graph(graph_file):
                 print("ERROR: Input address not clustered properly for tx: %s" % tx.tx_hash)
                 print("inputs: " + str(input_addr))
                 print("all cc: " + str(all_node_ids))
-                continue
+                sys.exit(1)
+                # continue
 
             if len(all_node_ids) == 0:
                 continue
@@ -106,8 +114,12 @@ def create_entire_graph(graph_file):
                 try:
                     node_id = addr_to_node_id[addr]
                 except KeyError as e:
-                    print("Key Error")
-                    continue
+                    print("Key Error Captured")
+                    print("address queried: %s" % addr)
+                    print("transaction inx: %s" % tx.tx_inx)
+                    # print("finding corresponding address")
+                    # find_address_for_identifier(addr)
+                    sys.exit(1)
 
                 tgt_nodes.append((node_id, val))
 
@@ -127,6 +139,26 @@ def create_entire_graph(graph_file):
                 f.write(line + "\n")
 
 
+def get_addr_id(address):
+    return BtcAddresses.get(address).identifier
+
+
+def test_get_cc(recompute):
+    addr_to_node_id, num_components = get_cc(recompute)
+    print(addr_to_node_id[get_addr_id("17Awgp386zWpxt6rWM7cViUvr1DuZeoifi")])
+    print(addr_to_node_id[get_addr_id("1Ju26TpxoiTaqYjwUmoef6Sff4AM5RiMfq")])
+    print(addr_to_node_id[get_addr_id("1FwYGaEjyFCFgYpNGgHDSbudK5skoLTMSW")])
+
+
 if __name__ == "__main__":
-    filepath = sys.argv[1]
-    create_entire_graph(filepath)
+    if sys.argv[1] == "--test":
+        from models.testdb_models import BtcAddresses, BtcTransactions
+        filepath = sys.argv[2]
+        recompute = bool(sys.argv[3])
+        # create_entire_graph(filepath, recompute)
+        test_get_cc(recompute)
+    else:
+        from models.backtest_models import BtcAddresses, BtcTransactions
+        from query.query_helper_backtest import find_address_for_identifier
+        filepath = sys.argv[1]
+        create_entire_graph(filepath, False)
