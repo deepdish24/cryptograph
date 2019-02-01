@@ -9,7 +9,7 @@ import sys
 
 def get_cc(recompute):
     if not recompute:
-        with open("pickles/cc_hist.pickle", "rb") as f:
+        with open("pickles/cc_hist_testdb.pickle", "rb") as f:
             dct = pickle.load(f)
 
         return dct, len(dct.keys())
@@ -65,8 +65,6 @@ def create_entire_graph(graph_file, recompute=False):
     # we first create mapping of address identifier to node_id so that
     # clustered graph can be created. Additional clustering metrics will
     # be added in here later (TODO)
-
-    print("code in function")
 
     addr_to_node_id, num_components = get_cc(recompute)
     addresses = len(addr_to_node_id.keys())
@@ -155,8 +153,8 @@ if __name__ == "__main__":
         from models.testdb_models import BtcAddresses, BtcTransactions
         filepath = sys.argv[2]
         recompute = bool(sys.argv[3])
-        # create_entire_graph(filepath, recompute)
-        test_get_cc(recompute)
+        create_entire_graph(filepath, recompute)
+        # test_get_cc(recompute)
     else:
         from models.backtest_models import BtcAddresses, BtcTransactions
         from query.query_helper_backtest import find_address_for_identifier
